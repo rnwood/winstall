@@ -64,7 +64,7 @@ let SingleApp = ({ app, all, onVersionChange = false, large = false, showTime = 
         app.selectedVersion = initialVersion;
       }
     }
-  }, [initialVersion]);
+  }, [initialVersion, large, app.versions]);
 
   if (!app.selectedVersion) app.selectedVersion = version;
 
